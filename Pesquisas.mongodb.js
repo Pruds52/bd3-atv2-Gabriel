@@ -6,13 +6,15 @@ use(database)
 
 // a - Produto mais caro
 
-db[collection].find()
-    .sort({ valor: -1 })
-    .limit(1)
+// db[collection].find()
+//     .sort({ valor: -1 })
+//     .limit(1)
 
 // b - Produto mais barato
 
-
+db[collection].find()
+    .sort({ valor: 1 })
+    .limit(1)
 
 // c - Produtos entre uma faixa de valor parametrizada
 
